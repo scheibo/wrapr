@@ -24,7 +24,7 @@ export function retrying<A, B>(fn: (a: A) => Promise<B>, retries = 5, wait = 20)
       }
     }
   };
-  return retry;
+  return (args: A) => retry(args, 0);
 }
 
 export function throttling<A, B>(fn: (a: A) => Promise<B>, limit = 10, interval = 50) {
