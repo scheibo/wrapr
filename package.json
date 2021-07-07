@@ -1,0 +1,17 @@
+{
+  "name": "wrapr",
+  "version": "0.0.1",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "description": "Middleware wrapper logic for asynchronous functions",
+  "repository": "github:scheibo/wrapr",
+  "license": "MIT",
+  "files": ["index.*"],
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  },
+  "scripts": {
+    "compile": "tsc -p .",
+    "prepare": "npm run compile"
+  }
+}
